@@ -10,7 +10,7 @@ import path from "path"
 dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
-const PORT=process.env.PORT || 5000;
+const PORT=5000;
 const __dirname=path.resolve();
 
 app.get("/",(req,res)=>{
