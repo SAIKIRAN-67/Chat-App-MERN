@@ -17,8 +17,8 @@ export const signUp=async(req,res)=>{
         if(user1){
             return res.status(400).send("User already exist with this email");
         }
-        const boyProfilePic="https://cdn-icons-png.flaticon.com/128/3731/3731489.png";
-        const girlProfilePic="https://cdn-icons-png.flaticon.com/128/522/522400.png";
+        const boyProfilePic="https://cdn-icons-png.flaticon.com/128/428/428933.png";
+        const girlProfilePic="https://cdn-icons-png.flaticon.com/128/11498/11498793.png";
         const hashedPassword=await bcryptjs.hash(password,10);
         const newUser=new User({
             email,
